@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskContainer {
+  margin-bottom: 15px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1,
+h3 {
+  width: 320px;
+  background-color: #fff;
+  color: #5a514c;
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  padding: 10px;
+  font-weight: 900;
+  border: 1px solid pink;
+  border-radius: 4px;
+}
+
+h3 {
+  padding: 5px;
+  height: 100px;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+  line-height: 0.8em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid pink;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+li button {
+  font-size: large;
+  background-color: white;
+  border: 1px solid pink;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+#taskInput {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+  border: 1px solid pink;
+}
+#addTaskBtn {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid pink;
+  font: arial, sans-serif;
+  font-size: 0.8em;
+  font-weight: 850;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+#greeting {
+  transition-duration: 0.5s;
+}
+/* google api icon */
+li button::before {
+  font-family: 'Material Icons';
+  content: 'delete';
+}
+#addTaskBtn:hover {
+  background-color: pink;
+  color: white;
+}
+li:hover {
+  background-color: pink;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+li button:hover {
+  background-color: white;
+  color: red;
+}
+#greeting:hover {
+  color: pink;
+}
+#taskInput:hover {
+  border: solid 2px pink;
+  box-shadow: 0 0 10px pink;
+}
